@@ -49,7 +49,7 @@ The [lexical grammar](/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#regul
 
 The boundaries of a character range must not specify more than one character, which happens if you use a [character class escape](/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_class_escape). For example:
 
-```js
+```js-nolint example-bad
 /[\s-9]/u; // SyntaxError: Invalid regular expression: Invalid character class
 ```
 
@@ -207,4 +207,4 @@ This example is mostly equivalent to `/^(?!🇺🇸|🇨🇳|🇷🇺|🇬🇧|�
 - [Literal character: `a`, `b`](/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Literal_character)
 - [Character escape: `\n`, `\u{...}`](/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Character_escape)
 - [Disjunction: `|`](/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Disjunction)
-- [RegExp v flag with set notation and properties of strings](https://v8.dev/features/regexp-v-flag) on v8.dev (June 27, 2022)
+- [RegExp v flag with set notation and properties of strings](https://v8.dev/features/regexp-v-flag) on v8.dev (2022)
